@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CONTRACTR</title>
         <link rel="stylesheet" href="{% static 'css/reset.css' %}">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
@@ -51,8 +52,12 @@
             </div>
         </nav>
     </div>
-
-    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+    <div class="container">
+        <div class="row">
+            <input class="col-9 form-control form-control-lg" type="text" placeholder="Search for a contractor...">
+            <input class="col-2 btn btn-primary" type="submit" value="Submit">
+        </div>
+    </div>
 
     {% block body_block %}
     {% endblock %}
