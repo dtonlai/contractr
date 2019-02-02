@@ -4,3 +4,9 @@ from django.http import HttpResponseRedirect, HttpResponse
 
 class ContractrIndexView(TemplateView):
     template_name = 'index.html'
+
+class TestPage(TemplateView):
+    template_name = 'test.html'
+
+class ThanksPage(TemplateView):
+    template_name = 'thanks.html'

@@ -31,23 +31,23 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="">Admin</a>
+                            <a class="dropdown-item" href="{% url 'accounts:login' %}">Login</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="">Register</a>
+                            <a class="dropdown-item" href="">Admin</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{% url "accounts:signup" %}">Sign Up</a>
                         </li>
                         <div class="dropdown-divider">
                             {% if user.is_authenticated %}
-                            <li>
-                                <a class="dropdown-item" href="">Logout</a>
-                            </li>
+                                <li>
+                                    <a class="dropdown-item" href="">Logout</a>
+                                </li>
                             {% else %}
-                            <li>
-                                <a class="dropdown-item" href="">Login</a>
-                            </li>
+                                <li>
+                                    <a class="dropdown-item" href="">Login</a>
+                                </li>
                             {% endif %}
                         </div>
                     </ul>
